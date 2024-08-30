@@ -81,10 +81,14 @@ h1::after {
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-
+.col-md-4 {
+  max-width: fit-content;
+  margin: 1rem 0;
+}
 .card {
   margin: 1.5rem 0.75rem;
   border: none;
@@ -98,8 +102,8 @@ h1::after {
   align-items: center;
 }
 img {
-  width: 1000px;
-  height: 100px;
+  max-width: 1000px;
+  max-height: 100px;
   object-fit: cover;
   border-radius: 10px;
 }
