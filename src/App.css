@@ -161,7 +161,12 @@ img {
   font-size: 1.25rem;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: space-between;
+}
 .btn-success:hover {
   background-color: #138496;
   transform: translateY(-2px);
