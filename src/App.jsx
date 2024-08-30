@@ -1,5 +1,16 @@
-function App() {
-  return <div>Hello word</div>;
-}
+import "./App.css";
 
-export default App;
+import { Component } from "react";
+import NavBar from "./components/NavBar";
+import News from "./components/News";
+
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <NavBar />
+        <News pageSize={5} country="in" category="General" />
+      </div>
+    );
+  }
+}
